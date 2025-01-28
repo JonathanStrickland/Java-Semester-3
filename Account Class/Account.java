@@ -1,49 +1,57 @@
 public class Account {
-    private double balance;
+    private String id;
+    private String name;
+    private int balance = 0;
 
-    // Initialize balance
-    public Account(double initialBalance) {
-        if (initialBalance >= 0) {
-            this.balance = initialBalance;
-        } else {
-            System.out.println("Initial balance can't be negative.");
-            this.balance = 0.0;
-        }
+    //
+    public Account(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
-    // Get the current balance
-    public double getBalance() {
+    public Account(String id, String name, int balance) {
+        this.id = id;
+        this.name = name;
+        this.balance = balance;
+    }
+
+    public String getID() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getBalance() {
         return balance;
     }
 
-    // Deposit money into the account
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-        } else {
-            System.out.println("Deposit amount must be positive.");
-        }
+    public int credit(int amount) {
+        balance += amount;
+        return balance;
     }
 
-    // Withdraw money
-    public boolean withdraw(double amount) {
-        if (amount > 0 && amount <= balance) {
+    public int debit(int amount) {
+        if (amount <= balance) {
             balance -= amount;
-            return true;
         } else {
-            System.out.println("Withdraw amount must be a positive number and no more than the available balance.");
-            return false;
+            System.out.println("Amount exceeded balance");
         }
+        return balance;
     }
 
-    // Transfer money
-    public boolean transfer(Account toAccount, double amount) {
-        if (this.withdraw(amount)) {
-            toAccount.deposit(amount);
-            return true;
+    public int transfer(Account another, int amount) {
+        if (amount <= balance) {
+            this.balance -= amount;
+            another.balance += amount;
         } else {
-            System.out.println("Transfer failed.");
-            return false;
+            System.out.println("Amount exceeded balance");
         }
+        return balance;
+    }
+
+    public String toString() {
+        return "account[id=" + id + ", name=" + name + ", balance=" + balance + "]";
     }
 }

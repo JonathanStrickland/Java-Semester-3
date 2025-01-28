@@ -1,7 +1,7 @@
 public class TestAccount {
     public static void main(String[] args) {
-        Account acc1 = new Account(5000.00);
-        Account acc2 = new Account(4000.00);
+        Account acc1 = new Account("1", "John Doe", 5000);
+        Account acc2 = new Account("2", "Jane Doe", 4000);
 
         // Display balance
         System.out.println("Balance of Account 1: $" + acc1.getBalance());
@@ -27,7 +27,7 @@ public class TestAccount {
         }
         System.out.println("\nTransfer complete!");
         
-        acc1.transfer(acc2, 1000.00);
+        acc1.transfer(acc2, 1000);
 
         // Display final balances
         System.out.println("\nBalance of Account 1: $" + acc1.getBalance());
