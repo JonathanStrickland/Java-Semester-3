@@ -1,0 +1,33 @@
+1. How many hours did it take you to complete this assessment? 
+  Problem 1: 45 mins
+  Problem 2: 30 mins
+  Problem 3: 1 hr
+  Problem 4: 30 mins
+
+  Total: 2 hr 45 mins
+
+2. What online resources you have used? (My lectures, YouTube, Stack overflow etc.)
+  -Your lectures
+  -YouTube
+
+3. Did you need to ask any of your friends in solving the problems.
+  No
+
+4. Did you need to ask questions to any of your instructors?
+  No
+
+5. Rate (subjectively) the difficulty of each question from your own perspective, 
+and whether you feel confident that you can solve a similar but different problem 
+requiring some of the same techniques in the future now that you’ve completed this one
+
+  Problem 1: 5/10 - It wasn't very difficulty but it did get me thinking, but overall
+              I didn't struggle with problem 1
+
+  Problem 2: 3/10 - It wasn't difficult, it was similar to past questions so I had a decent
+              understanding on where to start. Overall I didn't struggle with problem 2
+
+  Problem 3: 6/10 - It was a bit more challenging, but over all once I started to understand
+              I got it done pretty quickly. I slightly struggled with problem 3.
+  
+  Problem 4: 4/10 - It was very similar to problem 3, I just had to add a scalable method.
+              Overall I didn't struggle with problem 4.
